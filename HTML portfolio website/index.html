@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akmal | Personal Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #172554;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+nav {
+    background: #0f172a;
+    color: white;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+.hero {
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 58px);
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+.hero h2 {
+    color: #93c5fd;
+    font-size: 22px;
+}
+
+.hero p {
+    margin: 18px 0 28px;
+    max-width: 600px;
+}
+
+.btn {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 5px 5px 5px 0;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid white;
+}
+
+section {
+    padding: 65px 0;
+}
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.about {
+    max-width: 750px;
+}
+
+.skills, .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 18px #0f172a0a;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.light {
+    background: #eff6ff;
+}
+
+.contact-box {
+    background: #0f172a;
+    color: white;
+    padding: 35px;
+    border-radius: 14px;
+}
+
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+@media (max-width: 700px) {
+    .nav-content {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 65px 0;
+    }
+
+    .skills, .projects {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 45px 0;
+    }
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+
+.hero-image {
+    flex: 0 0 280px;
+    margin-left: auto;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #60a5fa;
+}
+
+
+@media (max-width: 700px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        order: -1;
+    }
+
+    .hero-image img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="container nav-content">
+        <div class="logo">&lt;/&gt; Akmal</div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+
+<header class="hero" id="home">
+    <div class="container hero-content">
+
+        <div class="hero-text">
+            <p>Hello, I'm</p>
+            <h1>Akmal</h1>
+            <h2>BCA Student | Aspiring Data Analyst</h2>
+
+            <p>
+                I am a curious learner interested in data analysis,
+                programming and web development. I enjoy learning
+                new technologies and building practical projects.
+            </p>
+
+            <a href="#projects" class="btn">
+                View My Projects →
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+                Contact Me
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <img src="IMG_20261022_111533.png"
+                 alt="Akmal Profile Photo">
+        </div>
+
+    </div>
+</header>
+
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about">
+            <p>
+                I am a BCA student developing my skills in
+                Excel, SQL, Python, Power BI, HTML and CSS.
+                My goal is to use technology and data to solve
+                problems and create useful solutions.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="light" id="skills">
+    <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills">
+            <div class="card">
+                <h3>Excel</h3>
+                <p>Formulas, Pivot Tables and dashboards.</p>
+            </div>
+            <div class="card">
+                <h3>SQL</h3>
+                <p>Queries, filtering and data analysis practice.</p>
+            </div>
+            <div class="card">
+                <h3>MS Word</h3>
+                <p>Document formatting, professional reports and flyer design.</p>
+            </div>
+            <div class="card">
+                <h3>Python</h3>
+                <p>Learning programming fundamentals.</p>
+            </div>
+            <div class="card">
+                <h3>HTML & CSS</h3>
+                <p>Building responsive web pages.</p>
+            </div>
+            <div class="card">
+                <h3>C & C++</h3>
+                <p>Practising logic and problem solving.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Excel Sales Dashboard</h3>
+                <p>
+                    A sales dashboard project for presenting
+                    business data and key performance indicators.
+                </p>
+            </div>
+            <div class="card">
+                <h3>C & C++</h3>
+                <p>
+                    Beginner programs for calculations,
+                    conditions, loops and problem solving.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Personal Portfolio</h3>
+                <p>
+                    A responsive website created using
+                    HTML and CSS to showcase my learning.
+                </p>
+            </div>
+            
+<div class="card">
+    <h3>MS Word Flyer Design</h3>
+    <p>
+        Designed a professional flyer using Microsoft Word,
+        including creative layouts, colors, images and text formatting.
+    </p>
+    <a href="./projects/flayer.pdf.pdf" target="_blank" class="btn">
+        View Flyer →
+    </a>
+</div>
+
+
+<div class="card">
+    <h3>Student Grade Calculator</h3>
+
+    <p>
+        A C programming project that calculates
+        total marks, percentage, and student grade.
+    </p>
+
+    <a href="./projects/student_grade.c.c" download class="btn">
+        Download Code
+    </a>
+
+    <a href="./projects/output.png.png" target="_blank" class="btn">
+        View Output
+    </a>
+</div>
+
+
+        </div>
+    </div>
+</section>
+
+<section class="light" id="contact">
+    <div class="container">
+        <div class="contact-box">
+            <h2 class="section-title">Let's Connect</h2>
+            <p>
+                I am interested in learning opportunities,
+                projects and entry-level career opportunities.
+            </p>
+            <p>Email: akmaljamadar10@gmail.com</p>
+            <p>LinkedIn: YOUR_LINKEDIN_PROFILE</p>
+            <a class="btn" href="https://github.com/"
+               target="_blank" rel="noopener">
+                Visit GitHub →
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Akmal | Personal Portfolio</p>
+    <p>Built with HTML & CSS</p>
+</footer>
+
+</body>
+</html>
